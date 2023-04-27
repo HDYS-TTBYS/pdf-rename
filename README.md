@@ -17,7 +17,7 @@ mkdir dist
 3.実行
 
 ```bash
-docker exec -i {container-id} /bin/bash -c "cd /src && python3 main.py"
+docker exec -it $(docker ps -aqf "name=pdf-rename") /bin/bash -c "cd /src && python3 main.py"
 ```
 
 4.掃除
